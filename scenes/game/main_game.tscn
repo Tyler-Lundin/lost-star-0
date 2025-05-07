@@ -87,23 +87,56 @@ text = "Pause"
 layout_mode = 2
 text = "Resume"
 
-[node name="SpeedControls" type="HBoxContainer" parent="UI/VBoxContainer"]
-layout_mode = 2
-theme_override_constants/separation = 10
-alignment = 1
+[node name="SpeedControls" type="Control" parent="UI"]
+layout_mode = 1
+anchors_preset = 2
+anchor_left = 0.0
+anchor_top = 1.0
+anchor_right = 0.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = -80.0
+offset_right = 160.0
+offset_bottom = -20.0
+grow_horizontal = 1
+grow_vertical = 0
 
-[node name="SpeedLabel" type="Label" parent="UI/VBoxContainer/SpeedControls"]
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/SpeedControls"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 5
+
+[node name="SpeedLabel" type="Label" parent="UI/SpeedControls/VBoxContainer"]
 layout_mode = 2
+theme_override_font_sizes/font_size = 12
 text = "Speed:"
 
-[node name="Speed1xButton" type="Button" parent="UI/VBoxContainer/SpeedControls"]
+[node name="HBoxContainer" type="HBoxContainer" parent="UI/SpeedControls/VBoxContainer"]
 layout_mode = 2
+theme_override_constants/separation = 5
+alignment = 1
+
+[node name="Speed1xButton" type="Button" parent="UI/SpeedControls/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(35, 35)
+layout_mode = 2
+theme_override_font_sizes/font_size = 12
 text = "1x"
+toggle_mode = true
 
-[node name="Speed2xButton" type="Button" parent="UI/VBoxContainer/SpeedControls"]
+[node name="Speed2xButton" type="Button" parent="UI/SpeedControls/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(35, 35)
 layout_mode = 2
+theme_override_font_sizes/font_size = 12
 text = "2x"
+toggle_mode = true
 
-[node name="Speed3xButton" type="Button" parent="UI/VBoxContainer/SpeedControls"]
+[node name="Speed5xButton" type="Button" parent="UI/SpeedControls/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(35, 35)
 layout_mode = 2
-text = "3x"
+theme_override_font_sizes/font_size = 12
+text = "5x"
+toggle_mode = true

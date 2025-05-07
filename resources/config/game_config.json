@@ -6,7 +6,7 @@
     },
     "time": {
         "seconds_per_year": 60.0,
-        "years_per_age": 100,
+        "years_per_age": 3000,
         "auto_save_interval": 300.0
     },
     "resources": {
@@ -24,7 +24,7 @@
     "ages": {
         "Stone Age": {
             "next_age": "Bronze Age",
-            "years_required": 100,
+            "years_required": 3000,
             "requirements": {
                 "food": 1000,
                 "wood": 500,

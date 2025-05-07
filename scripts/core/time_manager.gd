@@ -2,7 +2,7 @@ extends Node
 
 # Time-related constants
 const SECONDS_PER_YEAR: float = 0.2  # 5 real seconds = 1 game year (1/5 = 0.2)
-const YEARS_PER_AGE: int = 100
+const YEARS_PER_AGE: int = 3000  # Changed from 100 to 3000 for Stone Age
 
 # Current game time
 var current_year: float = 0.0  # Changed to float to handle fractional years
@@ -24,7 +24,7 @@ var age_progression: Dictionary = {
     },
     "Bronze Age": {
         "next_age": "Iron Age",
-        "years_required": YEARS_PER_AGE,
+        "years_required": 100,
         "requirements": {
             "food": 2000,
             "wood": 1000,
