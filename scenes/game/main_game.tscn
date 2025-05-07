@@ -7,9 +7,8 @@
 ambient_light_color = Color(0.2, 0.2, 0.2, 1.0)
 ambient_light_energy = 0.5
 
-[sub_resource type="DirectionalLight3D" id="DirectionalLight3D_1"]
-transform = Transform3D(1, 0, 0, 0, 0.866025, 0.5, 0, -0.5, 0.866025, 0, 10, 0)
-shadow_enabled = true
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1"]
+albedo_color = Color(0.2, 0.5, 0.2, 1.0)
 
 [node name="MainGame" type="Node3D"]
 script = ExtResource("1_2k4m3")
