@@ -5,28 +5,28 @@
 ### Basic Run
 ```bash
 # Windows (PowerShell/CMD)
-"G:\Godot\Godot_v4.4.1-stable_win64.exe" --path . --no-window --run
+"C:\Users\Tyler\Godot\Godot_v4.4.1-stable_win64.exe" --path . --no-window --run
 
 # Linux/WSL
-/mnt/g/Godot/Godot_v4.4.1-stable_win64.exe --path . --no-window --run
+/mnt/c/Users/Tyler/Godot/Godot_v4.4.1-stable_win64.exe --path . --no-window --run
 ```
 
 ### Run with Debug Output
 ```bash
 # Windows
-"G:\Godot\Godot_v4.4.1-stable_win64.exe" --path . --no-window --run --debug
+"C:\Users\Tyler\Godot\Godot_v4.4.1-stable_win64.exe" --path . --no-window --run --debug
 
 # Linux/WSL
-/mnt/g/Godot/Godot_v4.4.1-stable_win64.exe --path . --no-window --run --debug
+/mnt/c/Users/Tyler/Godot/Godot_v4.4.1-stable_win64.exe --path . --no-window --run --debug
 ```
 
 ### Run with Specific Scene
 ```bash
 # Windows
-"G:\Godot\Godot_v4.4.1-stable_win64.exe" --path . --no-window --run --scene res://scenes/game/main_game.tscn
+"C:\Users\Tyler\Godot\Godot_v4.4.1-stable_win64.exe" --path . --no-window --run --scene res://scenes/game/main_game.tscn
 
 # Linux/WSL
-/mnt/g/Godot/Godot_v4.4.1-stable_win64.exe --path . --no-window --run --scene res://scenes/game/main_game.tscn
+/mnt/c/Users/Tyler/Godot/Godot_v4.4.1-stable_win64.exe --path . --no-window --run --scene res://scenes/game/main_game.tscn
 ```
 
 ## Testing
@@ -34,19 +34,19 @@
 ### Run Unit Tests
 ```bash
 # Windows
-"G:\Godot\Godot_v4.4.1-stable_win64.exe" --path . --no-window --run --test
+"C:\Users\Tyler\Godot\Godot_v4.4.1-stable_win64.exe" --path . --no-window --run --test
 
 # Linux/WSL
-/mnt/g/Godot/Godot_v4.4.1-stable_win64.exe --path . --no-window --run --test
+/mnt/c/Users/Tyler/Godot/Godot_v4.4.1-stable_win64.exe --path . --no-window --run --test
 ```
 
 ### Run Specific Test
 ```bash
 # Windows
-"G:\Godot\Godot_v4.4.1-stable_win64.exe" --path . --no-window --run --test --test-name "TestName"
+"C:\Users\Tyler\Godot\Godot_v4.4.1-stable_win64.exe" --path . --no-window --run --test --test-name "TestName"
 
 # Linux/WSL
-/mnt/g/Godot/Godot_v4.4.1-stable_win64.exe --path . --no-window --run --test --test-name "TestName"
+/mnt/c/Users/Tyler/Godot/Godot_v4.4.1-stable_win64.exe --path . --no-window --run --test --test-name "TestName"
 ```
 
 ## Performance Testing
@@ -54,19 +54,19 @@
 ### Run with Performance Monitor
 ```bash
 # Windows
-"G:\Godot\Godot_v4.4.1-stable_win64.exe" --path . --no-window --run --debug --profiling
+"C:\Users\Tyler\Godot\Godot_v4.4.1-stable_win64.exe" --path . --no-window --run --debug --profiling
 
 # Linux/WSL
-/mnt/g/Godot/Godot_v4.4.1-stable_win64.exe --path . --no-window --run --debug --profiling
+/mnt/c/Users/Tyler/Godot/Godot_v4.4.1-stable_win64.exe --path . --no-window --run --debug --profiling
 ```
 
 ### Run with Memory Profiling
 ```bash
 # Windows
-"G:\Godot\Godot_v4.4.1-stable_win64.exe" --path . --no-window --run --debug --memory-profiling
+"C:\Users\Tyler\Godot\Godot_v4.4.1-stable_win64.exe" --path . --no-window --run --debug --memory-profiling
 
 # Linux/WSL
-/mnt/g/Godot/Godot_v4.4.1-stable_win64.exe --path . --no-window --run --debug --memory-profiling
+/mnt/c/Users/Tyler/Godot/Godot_v4.4.1-stable_win64.exe --path . --no-window --run --debug --memory-profiling
 ```
 
 ## Export and Build
@@ -74,19 +74,19 @@
 ### Export Game
 ```bash
 # Windows
-"G:\Godot\Godot_v4.4.1-stable_win64.exe" --path . --no-window --export "Windows Desktop" "build/game.exe"
+"C:\Users\Tyler\Godot\Godot_v4.4.1-stable_win64.exe" --path . --no-window --export "Windows Desktop" "build/game.exe"
 
 # Linux/WSL
-/mnt/g/Godot/Godot_v4.4.1-stable_win64.exe --path . --no-window --export "Windows Desktop" "build/game.exe"
+/mnt/c/Users/Tyler/Godot/Godot_v4.4.1-stable_win64.exe --path . --no-window --export "Windows Desktop" "build/game.exe"
 ```
 
 ### Build Headless Server
 ```bash
 # Windows
-"G:\Godot\Godot_v4.4.1-stable_win64.exe" --path . --no-window --export "Windows Server" "build/server.exe"
+"C:\Users\Tyler\Godot\Godot_v4.4.1-stable_win64.exe" --path . --no-window --export "Windows Server" "build/server.exe"
 
 # Linux/WSL
-/mnt/g/Godot/Godot_v4.4.1-stable_win64.exe --path . --no-window --export "Windows Server" "build/server.exe"
+/mnt/c/Users/Tyler/Godot/Godot_v4.4.1-stable_win64.exe --path . --no-window --export "Windows Server" "build/server.exe"
 ```
 
 ## Development Tools
@@ -94,19 +94,19 @@
 ### Check GDScript
 ```bash
 # Windows
-"G:\Godot\Godot_v4.4.1-stable_win64.exe" --path . --no-window --check-only
+"C:\Users\Tyler\Godot\Godot_v4.4.1-stable_win64.exe" --path . --no-window --check-only
 
 # Linux/WSL
-/mnt/g/Godot/Godot_v4.4.1-stable_win64.exe --path . --no-window --check-only
+/mnt/c/Users/Tyler/Godot/Godot_v4.4.1-stable_win64.exe --path . --no-window --check-only
 ```
 
 ### Generate Documentation
 ```bash
 # Windows
-"G:\Godot\Godot_v4.4.1-stable_win64.exe" --path . --no-window --doctool docs/generated
+"C:\Users\Tyler\Godot\Godot_v4.4.1-stable_win64.exe" --path . --no-window --doctool docs/generated
 
 # Linux/WSL
-/mnt/g/Godot/Godot_v4.4.1-stable_win64.exe --path . --no-window --doctool docs/generated
+/mnt/c/Users/Tyler/Godot/Godot_v4.4.1-stable_win64.exe --path . --no-window --doctool docs/generated
 ```
 
 ## Common Options
@@ -127,13 +127,13 @@
 ```bash
 # Set Godot path for easier command execution
 # Windows (PowerShell)
-$env:GODOT_PATH = "G:\Godot\Godot_v4.4.1-stable_win64.exe"
+$env:GODOT_PATH = "C:\Users\Tyler\Godot\Godot_v4.4.1-stable_win64.exe"
 
 # Windows (CMD)
-set GODOT_PATH=G:\Godot\Godot_v4.4.1-stable_win64.exe
+set GODOT_PATH=C:\Users\Tyler\Godot\Godot_v4.4.1-stable_win64.exe
 
 # Linux/WSL
-export GODOT_PATH=/mnt/g/Godot/Godot_v4.4.1-stable_win64.exe
+export GODOT_PATH=/mnt/c/Users/Tyler/Godot/Godot_v4.4.1-stable_win64.exe
 ```
 
 Then you can use:
@@ -153,7 +153,7 @@ param(
     [switch]$Profile
 )
 
-$godot = "G:\Godot\Godot_v4.4.1-stable_win64.exe"
+$godot = "C:\Users\Tyler\Godot\Godot_v4.4.1-stable_win64.exe"
 $args = @("--path", ".", "--no-window")
 
 if ($Scene) {
@@ -180,7 +180,7 @@ if ($Profile) {
 # run.sh
 #!/bin/bash
 
-GODOT="/mnt/g/Godot/Godot_v4.4.1-stable_win64.exe"
+GODOT="/mnt/c/Users/Tyler/Godot/Godot_v4.4.1-stable_win64.exe"
 ARGS=("--path" "." "--no-window")
 
 if [ ! -z "$1" ]; then

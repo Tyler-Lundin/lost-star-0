@@ -40,3 +40,14 @@ obj/
 
 # User-specific files
 user://
+
+# Project-specific ignores
+*.pid
+*.seed
+*.pid.lock
+
+# Godot executable
+C:/Users/Tyler/Godot/Godot_v4.4.1-stable_win64.exe
+
+# Documentation
+docs/command_line.md
