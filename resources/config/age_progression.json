@@ -1,0 +1,91 @@
+{
+    "Stone Age": {
+        "description": "The beginning of human civilization",
+        "icon": "res://assets/icons/ages/stone_age.png",
+        "years_required": 100,
+        "requirements": {
+            "food": 1000,
+            "wood": 500,
+            "stone": 250
+        },
+        "unlocks": {
+            "buildings": [
+                "hut",
+                "granary",
+                "woodcutter",
+                "quarry"
+            ],
+            "units": [
+                "villager",
+                "hunter",
+                "woodcutter",
+                "miner"
+            ],
+            "resources": [
+                "food",
+                "wood",
+                "stone"
+            ]
+        },
+        "effects": {
+            "resource_production": 1.0,
+            "construction_speed": 1.0,
+            "unit_training_speed": 1.0
+        }
+    },
+    "Bronze Age": {
+        "description": "The discovery of metalworking",
+        "icon": "res://assets/icons/ages/bronze_age.png",
+        "years_required": 100,
+        "requirements": {
+            "food": 2000,
+            "wood": 1000,
+            "stone": 500,
+            "bronze": 100
+        },
+        "unlocks": {
+            "buildings": [
+                "bronze_workshop"
+            ],
+            "units": [
+                "bronze_worker"
+            ],
+            "resources": [
+                "bronze"
+            ]
+        },
+        "effects": {
+            "resource_production": 1.5,
+            "construction_speed": 1.2,
+            "unit_training_speed": 1.2
+        }
+    },
+    "Iron Age": {
+        "description": "The mastery of iron working",
+        "icon": "res://assets/icons/ages/iron_age.png",
+        "years_required": 100,
+        "requirements": {
+            "food": 4000,
+            "wood": 2000,
+            "stone": 1000,
+            "bronze": 500,
+            "iron": 200
+        },
+        "unlocks": {
+            "buildings": [
+                "iron_workshop"
+            ],
+            "units": [
+                "iron_worker"
+            ],
+            "resources": [
+                "iron"
+            ]
+        },
+        "effects": {
+            "resource_production": 2.0,
+            "construction_speed": 1.5,
+            "unit_training_speed": 1.5
+        }
+    }
+} 
