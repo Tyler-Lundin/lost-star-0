@@ -32,6 +32,11 @@ layout_mode = 2
 text = "Year: 0 | Age: Stone Age"
 horizontal_alignment = 1
 
+[node name="DebugTimer" type="Label" parent="UI/VBoxContainer"]
+layout_mode = 2
+text = "Real Time: 0.0s"
+horizontal_alignment = 1
+
 [node name="ResourceInfo" type="Label" parent="UI/VBoxContainer"]
 layout_mode = 2
 text = "Resources:"
@@ -58,13 +63,23 @@ text = "Pause"
 layout_mode = 2
 text = "Resume"
 
-[node name="TimeScale" type="HSlider" parent="UI/VBoxContainer"]
+[node name="SpeedControls" type="HBoxContainer" parent="UI/VBoxContainer"]
 layout_mode = 2
-max_value = 5.0
-step = 0.1
-value = 1.0
+theme_override_constants/separation = 10
+alignment = 1
 
-[node name="TimeScaleLabel" type="Label" parent="UI/VBoxContainer"]
+[node name="SpeedLabel" type="Label" parent="UI/VBoxContainer/SpeedControls"]
 layout_mode = 2
-text = "Time Scale: 1.0x"
-horizontal_alignment = 1
+text = "Speed:"
+
+[node name="Speed1xButton" type="Button" parent="UI/VBoxContainer/SpeedControls"]
+layout_mode = 2
+text = "1x"
+
+[node name="Speed2xButton" type="Button" parent="UI/VBoxContainer/SpeedControls"]
+layout_mode = 2
+text = "2x"
+
+[node name="Speed3xButton" type="Button" parent="UI/VBoxContainer/SpeedControls"]
+layout_mode = 2
+text = "3x"
