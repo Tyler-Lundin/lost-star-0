@@ -1,0 +1,84 @@
+[gd_scene load_steps=6 format=3 uid="uid://c8q6v4j2y5n3q"]
+
+[ext_resource type="Script" uid="uid://doynpdgsxu81e" path="res://scripts/systems/camera_controller.gd" id="1_2u4vx"]
+
+[sub_resource type="Environment" id="Environment_1"]
+ambient_light_color = Color(0.2, 0.2, 0.2, 1)
+ambient_light_energy = 0.5
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1"]
+albedo_color = Color(0.2, 0.6, 0.2, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2"]
+albedo_color = Color(0.6, 0.2, 0.2, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3"]
+albedo_color = Color(0.2, 0.2, 0.6, 1)
+
+[node name="CameraTest" type="Node3D"]
+
+[node name="CameraController" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 10, 10, 10)
+script = ExtResource("1_2u4vx")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_1")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.866025, 0.5, 0, -0.5, 0.866025, 0, 10, 0)
+shadow_enabled = true
+
+[node name="Ground" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+size = Vector3(100, 1, 100)
+material = SubResource("StandardMaterial3D_1")
+
+[node name="TestObjects" type="Node3D" parent="."]
+
+[node name="Building1" type="CSGBox3D" parent="TestObjects"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 2, -10)
+size = Vector3(4, 4, 4)
+material = SubResource("StandardMaterial3D_2")
+
+[node name="Building2" type="CSGBox3D" parent="TestObjects"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 2, -10)
+size = Vector3(4, 4, 4)
+material = SubResource("StandardMaterial3D_2")
+
+[node name="Building3" type="CSGBox3D" parent="TestObjects"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 2, 10)
+size = Vector3(4, 4, 4)
+material = SubResource("StandardMaterial3D_2")
+
+[node name="Building4" type="CSGBox3D" parent="TestObjects"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 2, 10)
+size = Vector3(4, 4, 4)
+material = SubResource("StandardMaterial3D_2")
+
+[node name="Tower" type="CSGCylinder3D" parent="TestObjects"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 0)
+height = 10.0
+material = SubResource("StandardMaterial3D_3")
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CameraControls" type="Label" parent="UI"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -300.0
+offset_top = 20.0
+offset_right = -20.0
+offset_bottom = 120.0
+grow_horizontal = 0
+text = "Camera Controls:
+WASD / Arrow Keys: Move
+Mouse Wheel: Zoom
+Page Up/Down: Zoom"
