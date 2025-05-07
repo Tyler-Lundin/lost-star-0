@@ -1,0 +1,107 @@
+{
+    "villager": {
+        "name": "Villager",
+        "description": "Basic worker unit",
+        "icon": "res://assets/icons/units/villager.png",
+        "category": "worker",
+        "age_required": "Stone Age",
+        "cost": {
+            "food": 50
+        },
+        "stats": {
+            "health": 100,
+            "work_speed": 1.0,
+            "gathering_efficiency": 1.0
+        },
+        "abilities": [
+            "gather_resources",
+            "construct_buildings"
+        ],
+        "training_time": 30.0
+    },
+    "hunter": {
+        "name": "Hunter",
+        "description": "Specialized in gathering food",
+        "icon": "res://assets/icons/units/hunter.png",
+        "category": "worker",
+        "age_required": "Stone Age",
+        "cost": {
+            "food": 75,
+            "wood": 25
+        },
+        "stats": {
+            "health": 120,
+            "work_speed": 1.2,
+            "gathering_efficiency": 1.5
+        },
+        "abilities": [
+            "gather_food",
+            "hunt_animals"
+        ],
+        "training_time": 45.0
+    },
+    "woodcutter": {
+        "name": "Woodcutter",
+        "description": "Specialized in gathering wood",
+        "icon": "res://assets/icons/units/woodcutter.png",
+        "category": "worker",
+        "age_required": "Stone Age",
+        "cost": {
+            "food": 75,
+            "wood": 25
+        },
+        "stats": {
+            "health": 120,
+            "work_speed": 1.2,
+            "gathering_efficiency": 1.5
+        },
+        "abilities": [
+            "gather_wood",
+            "chop_trees"
+        ],
+        "training_time": 45.0
+    },
+    "miner": {
+        "name": "Miner",
+        "description": "Specialized in gathering stone and minerals",
+        "icon": "res://assets/icons/units/miner.png",
+        "category": "worker",
+        "age_required": "Stone Age",
+        "cost": {
+            "food": 75,
+            "wood": 25
+        },
+        "stats": {
+            "health": 120,
+            "work_speed": 1.2,
+            "gathering_efficiency": 1.5
+        },
+        "abilities": [
+            "gather_stone",
+            "mine_ores"
+        ],
+        "training_time": 45.0
+    },
+    "bronze_worker": {
+        "name": "Bronze Worker",
+        "description": "Specialized in working with bronze",
+        "icon": "res://assets/icons/units/bronze_worker.png",
+        "category": "worker",
+        "age_required": "Bronze Age",
+        "cost": {
+            "food": 100,
+            "wood": 50,
+            "bronze": 25
+        },
+        "stats": {
+            "health": 150,
+            "work_speed": 1.5,
+            "gathering_efficiency": 2.0
+        },
+        "abilities": [
+            "gather_bronze",
+            "craft_bronze_items"
+        ],
+        "training_time": 60.0
+    }
+} 

@@ -1,0 +1,81 @@
+{
+    "hut": {
+        "name": "Hut",
+        "description": "Basic shelter for your population",
+        "icon": "res://assets/icons/buildings/hut.png",
+        "category": "housing",
+        "age_required": "Stone Age",
+        "cost": {
+            "wood": 10,
+            "stone": 5
+        },
+        "effects": {
+            "population_capacity": 5,
+            "food_production": 0.5
+        },
+        "construction_time": 10.0
+    },
+    "granary": {
+        "name": "Granary",
+        "description": "Store and preserve food",
+        "icon": "res://assets/icons/buildings/granary.png",
+        "category": "storage",
+        "age_required": "Stone Age",
+        "cost": {
+            "wood": 20,
+            "stone": 15
+        },
+        "effects": {
+            "food_capacity": 500,
+            "food_preservation": 0.1
+        },
+        "construction_time": 20.0
+    },
+    "woodcutter": {
+        "name": "Woodcutter's Hut",
+        "description": "Harvest wood from nearby forests",
+        "icon": "res://assets/icons/buildings/woodcutter.png",
+        "category": "production",
+        "age_required": "Stone Age",
+        "cost": {
+            "wood": 15,
+            "stone": 5
+        },
+        "effects": {
+            "wood_production": 1.0
+        },
+        "construction_time": 15.0
+    },
+    "quarry": {
+        "name": "Quarry",
+        "description": "Extract stone from the earth",
+        "icon": "res://assets/icons/buildings/quarry.png",
+        "category": "production",
+        "age_required": "Stone Age",
+        "cost": {
+            "wood": 25,
+            "stone": 10
+        },
+        "effects": {
+            "stone_production": 0.5
+        },
+        "construction_time": 25.0
+    },
+    "bronze_workshop": {
+        "name": "Bronze Workshop",
+        "description": "Craft bronze tools and weapons",
+        "icon": "res://assets/icons/buildings/bronze_workshop.png",
+        "category": "production",
+        "age_required": "Bronze Age",
+        "cost": {
+            "wood": 50,
+            "stone": 30,
+            "bronze": 10
+        },
+        "effects": {
+            "bronze_production": 0.2,
+            "tool_quality": 0.1
+        },
+        "construction_time": 40.0
+    }
+} 

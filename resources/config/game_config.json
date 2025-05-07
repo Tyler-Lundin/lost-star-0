@@ -1,0 +1,57 @@
+{
+    "game": {
+        "name": "ChronoCiv: Idle Ascension",
+        "version": "0.1.0",
+        "debug_mode": true
+    },
+    "time": {
+        "seconds_per_year": 60.0,
+        "years_per_age": 100,
+        "auto_save_interval": 300.0
+    },
+    "resources": {
+        "initial": {
+            "food": 100.0,
+            "wood": 50.0,
+            "stone": 25.0
+        },
+        "capacities": {
+            "food": 1000.0,
+            "wood": 500.0,
+            "stone": 250.0
+        }
+    },
+    "ages": {
+        "Stone Age": {
+            "next_age": "Bronze Age",
+            "years_required": 100,
+            "requirements": {
+                "food": 1000,
+                "wood": 500,
+                "stone": 250
+            }
+        },
+        "Bronze Age": {
+            "next_age": "Iron Age",
+            "years_required": 100,
+            "requirements": {
+                "food": 2000,
+                "wood": 1000,
+                "stone": 500,
+                "bronze": 100
+            }
+        }
+    },
+    "ui": {
+        "theme": "default",
+        "font_size": 16,
+        "show_tooltips": true,
+        "show_debug_info": true
+    },
+    "audio": {
+        "master_volume": 1.0,
+        "music_volume": 0.8,
+        "sfx_volume": 0.8,
+        "mute": false
+    }
+} 

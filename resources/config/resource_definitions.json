@@ -1,0 +1,53 @@
+{
+    "food": {
+        "name": "Food",
+        "description": "Basic sustenance for your population",
+        "icon": "res://assets/icons/resources/food.png",
+        "category": "basic",
+        "base_production": 1.0,
+        "base_consumption": 0.5,
+        "storage_multiplier": 1.0
+    },
+    "wood": {
+        "name": "Wood",
+        "description": "Essential material for construction and fuel",
+        "icon": "res://assets/icons/resources/wood.png",
+        "category": "basic",
+        "base_production": 0.5,
+        "base_consumption": 0.2,
+        "storage_multiplier": 1.0
+    },
+    "stone": {
+        "name": "Stone",
+        "description": "Durable material for advanced construction",
+        "icon": "res://assets/icons/resources/stone.png",
+        "category": "basic",
+        "base_production": 0.25,
+        "base_consumption": 0.1,
+        "storage_multiplier": 1.0
+    },
+    "bronze": {
+        "name": "Bronze",
+        "description": "Alloy of copper and tin, used for tools and weapons",
+        "icon": "res://assets/icons/resources/bronze.png",
+        "category": "advanced",
+        "base_production": 0.1,
+        "base_consumption": 0.05,
+        "storage_multiplier": 0.8,
+        "requirements": {
+            "age": "Bronze Age"
+        }
+    },
+    "iron": {
+        "name": "Iron",
+        "description": "Strong metal for advanced tools and weapons",
+        "icon": "res://assets/icons/resources/iron.png",
+        "category": "advanced",
+        "base_production": 0.05,
+        "base_consumption": 0.02,
+        "storage_multiplier": 0.8,
+        "requirements": {
+            "age": "Iron Age"
+        }
+    }
+} 
