@@ -2,6 +2,8 @@
 
 [ext_resource type="Script" path="res://scripts/game/main_game.gd" id="1_2k4m3"]
 [ext_resource type="Script" path="res://scripts/systems/camera_controller.gd" id="1_2u4vx"]
+[ext_resource type="Script" path="res://scripts/core/time_manager.gd" id="2_l4n5p"]
+[ext_resource type="Script" path="res://scripts/core/input_manager.gd" id="3_m5o6q"]
 
 [sub_resource type="Environment" id="Environment_1"]
 ambient_light_color = Color(0.2, 0.2, 0.2, 1.0)
@@ -140,3 +142,9 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 12
 text = "5x"
 toggle_mode = true
+
+[node name="TimeManager" type="Node" parent="."]
+script = ExtResource("2_l4n5p")
+
+[node name="InputManager" type="Node" parent="."]
+script = ExtResource("3_m5o6q")

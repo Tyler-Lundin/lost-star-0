@@ -9,6 +9,7 @@ extends Node
 @onready var speed2x_button = $UI/SpeedControls/VBoxContainer/HBoxContainer/Speed2xButton
 @onready var speed5x_button = $UI/SpeedControls/VBoxContainer/HBoxContainer/Speed5xButton
 @onready var debug_timer = $UI/VBoxContainer/DebugTimer
+@onready var input_manager = $InputManager
 
 var real_time_elapsed: float = 0.0
 
@@ -30,6 +31,9 @@ func _ready() -> void:
     speed1x_button.pressed.connect(_on_speed_1x_pressed)
     speed2x_button.pressed.connect(_on_speed_2x_pressed)
     speed5x_button.pressed.connect(_on_speed_5x_pressed)
+    
+    # Connect input manager signals
+    input_manager.speed_changed.connect(_on_speed_changed)
     
     # Connect EventBus signals
     EventBus.time_advanced.connect(_on_time_advanced)
@@ -54,7 +58,8 @@ func _verify_nodes() -> bool:
         is_instance_valid(speed1x_button) and
         is_instance_valid(speed2x_button) and
         is_instance_valid(speed5x_button) and
-        is_instance_valid(debug_timer)
+        is_instance_valid(debug_timer) and
+        is_instance_valid(input_manager)
     )
 
 func _create_resource_labels() -> void:
@@ -108,6 +113,12 @@ func _on_speed_2x_pressed() -> void:
 func _on_speed_5x_pressed() -> void:
     TimeManager.set_time_scale(5.0)
     _update_speed_buttons()
+
+func _on_speed_changed(new_speed: float) -> void:
+    match new_speed:
+        1.0: _on_speed_1x_pressed()
+        2.0: _on_speed_2x_pressed()
+        5.0: _on_speed_5x_pressed()
 
 func _on_time_advanced(delta: float) -> void:
     time_info.text = "Year: %d | Age: %s" % [TimeManager.current_year, TimeManager.current_age]

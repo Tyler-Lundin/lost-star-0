@@ -1,0 +1,14 @@
+{
+    "speed_1x": {
+        "key": "1",
+        "description": "Set game speed to 1x"
+    },
+    "speed_2x": {
+        "key": "2",
+        "description": "Set game speed to 2x"
+    },
+    "speed_5x": {
+        "key": "3",
+        "description": "Set game speed to 5x"
+    }
+} 
