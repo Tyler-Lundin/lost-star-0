@@ -5,7 +5,7 @@ param(
     [switch]$Profile
 )
 
-$godot = "G:\Godot\Godot_v4.4.1-stable_win64.exe"
+$godot = "C:\Users\Tyler\Godot\Godot_v4.4.1-stable_win64.exe"
 $args = @("--path", ".", "--no-window")
 
 if ($Scene) {

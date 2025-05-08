@@ -1,0 +1,91 @@
+[gd_scene load_steps=5 format=3 uid="uid://b6x8v0j6y5n3q"]
+
+[ext_resource type="Script" path="res://scripts/core/game_state.gd" id="1_2k4m3"]
+[ext_resource type="Script" path="res://scripts/core/save_system.gd" id="2_3k4m3"]
+[ext_resource type="Script" path="res://scripts/game/ui_manager.gd" id="3_4k5m3"]
+
+[node name="MainGame" type="Node"]
+script = ExtResource("1_2k4m3")
+
+[node name="SaveSystem" type="Node" parent="."]
+script = ExtResource("2_3k4m3")
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("3_4k5m3")
+
+[node name="ResourcePanel" type="Panel" parent="UI"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -200.0
+offset_bottom = 200.0
+grow_horizontal = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/ResourcePanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="FoodLabel" type="Label" parent="UI/ResourcePanel/VBoxContainer"]
+layout_mode = 2
+text = "Food: 0"
+
+[node name="WoodLabel" type="Label" parent="UI/ResourcePanel/VBoxContainer"]
+layout_mode = 2
+text = "Wood: 0"
+
+[node name="StoneLabel" type="Label" parent="UI/ResourcePanel/VBoxContainer"]
+layout_mode = 2
+text = "Stone: 0"
+
+[node name="PopulationLabel" type="Label" parent="UI/ResourcePanel/VBoxContainer"]
+layout_mode = 2
+text = "Population: 0"
+
+[node name="AgeLabel" type="Label" parent="UI/ResourcePanel/VBoxContainer"]
+layout_mode = 2
+text = "Age: Stone Age"
+
+[node name="GameTimeLabel" type="Label" parent="UI/ResourcePanel/VBoxContainer"]
+layout_mode = 2
+text = "Time: 0.0"
+
+[node name="SaveLoadPanel" type="Panel" parent="UI"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -200.0
+offset_top = 200.0
+offset_bottom = 300.0
+grow_horizontal = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/SaveLoadPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SaveButton" type="Button" parent="UI/SaveLoadPanel/VBoxContainer"]
+layout_mode = 2
+text = "Save Game"
+
+[node name="LoadButton" type="Button" parent="UI/SaveLoadPanel/VBoxContainer"]
+layout_mode = 2
+text = "Load Game"
+
+[node name="PauseButton" type="Button" parent="UI/SaveLoadPanel/VBoxContainer"]
+layout_mode = 2
+text = "Pause" 
