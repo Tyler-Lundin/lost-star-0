@@ -5,7 +5,7 @@ extends Control
 @onready var settings_button = $VBoxContainer/SettingsButton
 @onready var achievements_button = $VBoxContainer/AchievementsButton
 @onready var quit_button = $VBoxContainer/QuitButton
-@onready var title_label = $VBoxContainer/Title
+@onready var title_label = $Title
 
 func _ready() -> void:
 	# Apply styles
